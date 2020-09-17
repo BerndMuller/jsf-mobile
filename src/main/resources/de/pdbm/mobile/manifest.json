@@ -1,0 +1,11 @@
+{
+  "name": "JSF Praxis Mobile",
+  "description": "Beispiel für Web-App-Manifest",
+  "icons": [{
+    "src": "/mobile/javax.faces.resource/icon1.png.xhtml?ln=icons",
+    "sizes": "128x128"
+    }, {
+    "src": "/mobile/javax.faces.resource/icon2.png.xhtml?ln=icons",
+    "sizes": "96x96"
+  }]
+}

@@ -1,0 +1,29 @@
+<ui:composition template="/WEB-INF/templates/main.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	
+	<ui:define name="main">
+		<h:form>
+			<section>
+				<header>Seite 1 mit Flexbox</header>
+				<div class="blocks">
+  					<div class="block">
+  						<input type="text" placeholder="Anrede" />
+						<input type="text" placeholder="Vorname" />
+						<input type="text" placeholder="Nachname" />
+						<input type="text" placeholder="Geburtstag" />
+  					</div>
+					<div class="block">
+						<input type="text" placeholder="Straße" />
+						<input type="text" placeholder="Hausnummer" />
+						<input type="text" placeholder="Postleitzahl" />
+						<input type="text" placeholder="Ort" />
+					</div>
+				</div>
+			</section>
+		</h:form>
+	</ui:define>
+
+</ui:composition>

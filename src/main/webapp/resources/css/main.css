@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+:root {
+	box-sizing: border-box;
+	font-size: 100%;
+	margin: 0;
+  	padding: 0;
+ 	--main-color-light: #E5ECE9;
+ 	--main-color-dark: #B7C3CE; 
+ 	--main-margin: 0.2rem 0.4rem 0.2rem 0.4rem;
+	--main-padding: 0.5rem 0.4rem 0.5rem 0.4rem;
+	--input-width: 20rem;
+	--input-height: 1.9rem;
+	--border: 1px solid var(--main-color-dark);
+	--border-radius: 0.2rem; 
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+html {
+	height: 100%;
+	background-color: white;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: var(--main-color-light);
+	min-height: 98%;
+	min-width: 300px;
+	margin: 0.5%;
+	padding: 0.5%;
+}
+
+main {
+	border: var(--border);
+	margin: var(--main-margin);
+	padding: var(--main-padding);
+	background-color: white;
+}
+
+section {
+	padding: var(--main-padding);
+}
+
+section > table > thead {
+	background-color: var(--main-color-light);
+	font-size: 1.1rem;
+}
+
+.blocks { /* Flexbox innerhalb <section> */
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block { /* Flexbox innerhalb <section>, einzelner Block*/
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 300px;
+	border: 1px solid;
+	margin: 0.2rem;
+}
+
+section > header {
+	border: var(--border);
+	font-size: 1.1rem;
+	font-weight: bolder;
+	text-align: center;
+	margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+	padding: 0.5rem 0rem 0.5rem 0rem;
+	background-color: var(--main-color-light);
+}
+	
+footer {
+	border: var(--border);
+	font-size: 0.8rem;
+	background-color: white;
+	margin: var(--main-margin);
+	padding: var(--main-padding);
+	text-align: center;	
+}
+
+table {
+	width: 100%;
+}
+	
+input[type=text], input[type=password], input[type=date], textarea, select {
+	width: calc(100% - 2rem); /* linke und rechte margin abziehen */
+	margin: 1rem 1rem 1rem 1rem;
+	height: var(--input-height);
+	border: var(--border);
+	font-size: 0.9rem;
+	background-color: var(--main-color-light);
+	filter: brightness(1.05);
+	border-radius: var(--border-radius);
+}
+
+input[type=button], input[type=submit] {
+	width: var(--input-width);
+	height: var(--input-height);
+	background-color: var(--main-color-light);
+	border: var(--border);
+	font-size: 0.9rem;
+ 	padding: 0.2rem 0.5rem 0.2rem 0.5rem; 
+ 	border-radius: var(--border-radius);
+}
+
+input[type=button]:hover, input[type=submit]:hover {
+	filter: brightness(0.9);
+}
